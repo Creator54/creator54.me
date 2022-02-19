@@ -1,0 +1,29 @@
+base_url = "http://creator54.me"
+title = "Bonjour !"
+
+compile_sass = true
+
+highlight_code = false
+
+build_search_index = false
+
+[extra]
+greeting = "Hi There !"
+
+
+links = [
+  { title = "GitHub", url = "https://github.com/creator54", icon = "github" },
+  { title = "My Blogs", url = "http://blog.creator54.me", iconset = "fas", icon = "blog" },
+  { title = "Linkedin", url = "https://www.linkedin.com/in/saroj-kumar-mahato/", icon = "linkedin" },
+  { title = "Dev.to", url = "https://dev.to/creator54", icon = "dev" },
+  { title = "Reddit", url = "https://www.reddit.com/user/Creator54", icon = "reddit" },
+  { title = "Youtube", url = "https://www.youtube.com/channel/UCUJj-aOc8L7lGwajbOR5Ijg", icon = "youtube" },
+  { title = "Lichess", url = "https://lichess.org/@/Creator54", iconset = "fas", icon = "chess-knight" },
+  { title = "E-Mail", url = "mailto:hi.creator54@gmail.com", iconset = "fas", icon = "envelope-open" },
+  { title = "Telegram", url = "t.me/creator54", iconset = "fas", icon = "paper-plane" },
+]
+
+[extra.theme]
+background = "#00838F"
+foreground = "#FFF"
+hover = "#333"
