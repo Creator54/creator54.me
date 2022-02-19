@@ -20,7 +20,7 @@ links = [
   { title = "Youtube", url = "https://www.youtube.com/channel/UCUJj-aOc8L7lGwajbOR5Ijg", icon = "youtube" },
   { title = "Lichess", url = "https://lichess.org/@/Creator54", iconset = "fas", icon = "chess-knight" },
   { title = "E-Mail", url = "mailto:hi.creator54@gmail.com", iconset = "fas", icon = "envelope-open" },
-  { title = "Telegram", url = "t.me/creator54", iconset = "fas", icon = "paper-plane" },
+  { title = "Telegram", url = "https://t.me/creator54", iconset = "fas", icon = "paper-plane" },
 ]
 
 [extra.theme]
