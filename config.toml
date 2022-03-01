@@ -1,4 +1,4 @@
-base_url = "http://creator54.me"
+base_url = "https://creator54.me"
 title = "Bonjour !"
 
 compile_sass = true
