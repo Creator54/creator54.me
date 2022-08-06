@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Bonjour !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Import style.css from root directory -->
@@ -11,7 +12,7 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div id="navbar">
       <a class="fa-brands fa-github" href="https://github.com/creator54" target="_blank"></a>&nbsp;
       <a class="fa-solid fa-blog" href="https://blog.creator54.me" target="_blank"></a>&nbsp;
       <a class="fa-brands fa-stack-overflow" href="https://stackoverflow.com/users/12743323/creator54" target="_blank"></a>&nbsp;
@@ -21,8 +22,9 @@
       <a class="fa-brands fa-dev" href="https://dev.to/creator54" target="_blank"></a>&nbsp;
       <a class="fa-brands fa-reddit" href="https://www.reddit.com/user/Creator54" target="_blank"></a>&nbsp;
       <a class="fa-solid fa-chess-knight" href="https://lichess.org/@/creator54" target="_blank"></a>
+      <button id="btn" onclick="cli()"> CLI </button>
     </div>
-    <div class="main">
+    <div id="gui">
       <h1>Saroj Kumar Mahato</h1>
       <h3>
         <p>I'm a <span class="text-slider-items">Programmer, Scripter, Open-Source Contributor, Linux Enthusiast, Nix Fan, Cloud Enthusiast, Chess lover</span></p>
@@ -49,6 +51,28 @@
         }
       </script>
     </div>
+    <div id="cli">
+      <a style="text-decoration: underline;"> Shell </a><br>
+      <textarea name="a" rows="1" ></textarea>
+    </div>
+    <script>
+      function cli() {
+        var x = document.getElementById("gui");
+        var y = document.getElementById("cli");
+        var z = document.getElementById("footer");
+        var btn = document.getElementById("btn");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+          btn.innerHTML = "CLI";
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+          y.style.height = "40vw";
+          btn.innerHTML = "GUI";
+        }
+      }
+    </script>
     <footer>
       <a class="fa-solid fa-cloud-arrow-down" href="https://docs.creator54.me/resume" target="_blank"></a>
       <a href="https://docs.creator54.me/resume" target="_blank">Resume</a>
