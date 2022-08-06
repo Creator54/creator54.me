@@ -6,35 +6,49 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Import style.css from root directory -->
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/b65c421038.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="heading">
+    <div class="navbar">
+      <a class="fa-brands fa-github" href="https://github.com/creator54" target="_blank"></a>&nbsp;
+      <a class="fa-solid fa-blog" href="https://blog.creator54.me" target="_blank"></a>&nbsp;
+      <a class="fa-brands fa-stack-overflow" href="https://stackoverflow.com/users/12743323/creator54" target="_blank"></a>&nbsp;
+      <a class="fa-brands fa-linkedin-in" href="https://linkedin.com/in/saroj-kumar-mahato" target="_blank"></a>&nbsp;
+      <a class="fa-brands fa-telegram" href="https://t.me/creator54" target="_blank"></a>&nbsp;
+      <a class="fa-brands fa-dev" href="https://dev.to/creator54" target="_blank"></a>&nbsp;
+      <a class="fa-brands fa-reddit" href="https://www.reddit.com/user/Creator54" target="_blank"></a>&nbsp;
+      <a class="fa-solid fa-chess-knight" href="https://lichess.org/@/creator54" target="_blank"></a>
+    </div>
+    <div class="main">
       <h1>Saroj Kumar Mahato</h1>
       <h3>
         <p>I'm a <span class="text-slider-items">Programmer, Scripter, Open-Sourcerer, Linux Enthusiast, Nix Fan, Cloud Enthusiast, Chess lover</span></p>
         <strong class="text-slider"></strong>
       </h3>
+      <!-- Import typed.min.js file from typed.js folder -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <!-- Add jquery cdn -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Add this script for successful implementation of typed.js -->
+      <script>
+        if ($(".text-slider").length == 1) {
+          var typed_strings =
+            $(".text-slider-items").text();
+          var typed = new Typed(".text-slider", {
+            strings: typed_strings.split(", "),
+            typeSpeed: 90,
+            loop: true,
+            backDelay: 900,
+            backSpeed: 30,
+          });
+        }
+      </script>
     </div>
-    <!-- Import typed.min.js file from typed.js folder -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- Add jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Add this script for successful implementation of typed.js -->
-    <script>
-      if ($(".text-slider").length == 1) {
-        var typed_strings =
-          $(".text-slider-items").text();
-        var typed = new Typed(".text-slider", {
-          strings: typed_strings.split(", "),
-          typeSpeed: 90,
-          loop: true,
-          backDelay: 900,
-          backSpeed: 30,
-        });
-      }
-    </script>
+    <footer>
+      <a class="fa-solid fa-cloud-arrow-down" href="https://docs.creator54.me/resume" target="_blank"> Resume </a>
+    </footer>
   </body>
 </html>
