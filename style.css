@@ -12,6 +12,14 @@ footer{
   font-size: 1vw;
 }
 
+#btn{
+  font-size: 1.5vw;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  padding: 0%;
+}
+
 a{
   color: white;
   text-decoration: none;
@@ -57,7 +65,7 @@ a:active {
 }
 
 textarea{
-  resize: none; 
+  resize: none;
   white-space: nowrap;
   overflow-x: scroll;
 }
