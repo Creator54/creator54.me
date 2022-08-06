@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-#my http-server wrapper
+#my live-server wrapper
 
 function run() {
   if which npx &>/dev/null; then
-    npx http-server $1 $2
+    npx live-server ${@:1} #pass all arguments starting at 1
   else
     echo "npx not found ! Make sure node is installed and available to current user !"
   fi
@@ -11,12 +11,12 @@ function run() {
 
 if [ "$1" = "-h" ]; then
   echo "Usage: "
-  echo "./start <args>  : start http-server and pass args to it"
-  echo "./start -p 1234 : start http-server on port 1234"
+  echo "./start <args>  : start live-server and pass args to it"
+  echo "./start -p 1234 : start live-server on port 1234"
 elif [ "$1" = "-p" ] && [ ! -z "$2" ]; then
-  run $1 $2
+  run --port=$2
 elif [ ! -z $1 ]; then
-  run $1
+  run ${@:1}
 else
-  run -p 8080
+  run --port=8080
 fi
