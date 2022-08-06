@@ -2,12 +2,13 @@ body {
   background-color: #191B1C;
   font-family: 'Poppins';
   margin: auto;
+  height: 100%;
   text-align: center;
   color: white;
 }
 
 footer{
-  margin-bottom: 2vw;
+  margin-top: 17%;
   font-size: 1vw;
 }
 
