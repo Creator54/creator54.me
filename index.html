@@ -3,20 +3,18 @@
   <head>
     <title>Bonjour !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <!-- Import style.css from root directory -->
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/b65c421038.js" crossorigin="anonymous"></script>
+
+    <!-- Import assets from root directory -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.34.0/js/jquery.terminal.min.js" integrity="sha512-lfkU/Qku0yOVZEYANlw2mOv7fpHFdS1E62UT7vJ55k22OB+xgRNNa6Cdor4Lugl4jhDjX29lJAG12X/OHFe8JQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.34.0/css/jquery.terminal.css" integrity="sha512-lT1/Sb6Bu4LaJJoTsxNZnlvt7pjuntBoSqSMJY7MxG5Yl1XgxsXA6jcJinPU0lx5eEsnudBE1ubzHSYR/W8xTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/Open-Sans.css">
+    <link rel="stylesheet" href="./assets/jquery.terminal/jquery.terminal.css" />
+    <script src="./assets/typed.js"></script>
+    <script src="./assets/fontawesome.js"></script>
+    <script src="./assets/jquery.terminal/jquery.min.js"></script>
+    <script src="./assets/jquery.terminal/jquery.terminal.min.js"></script>
   </head>
-
   <body>
-
     <div id="navbar">
       <div id="navbar-left">
         <button id="btn" onclick="cli()"> CLI </button>
@@ -63,13 +61,6 @@
         <p>I'm a <span class="text-slider-items">Programmer, Scripter, Open-Source Contributor, Linux Enthusiast, Nix Fan, Cloud Enthusiast, Chess lover</span></p>
         <strong class="text-slider"></strong>
       </h3>
-      <!-- Import typed.min.js file from typed.js folder -->
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-      <!-- Add jquery cdn -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-      <!-- Add this script for successful implementation of typed.js -->
       <script>
         if ($(".text-slider").length == 1) {
           var typed_strings =
