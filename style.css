@@ -67,11 +67,11 @@ a:active {
 
 #cli{
   display: none;
-  margin-top: 2vw;
+  text-align: left;
+  margin-top: 1.5vw;
   margin-left: 2vw;
   margin-right: 2vw;
-  outline: 0.3vw solid red;
-  color: #00FF00;
+  --size: 0.4;
 }
 
 textarea{
