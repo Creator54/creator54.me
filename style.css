@@ -15,7 +15,7 @@ footer{
 #btn{
   color: white;
   font-size: 1.5vw;
-  background-color: Transparent;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   padding: 0%;
@@ -71,11 +71,13 @@ a:active {
   margin-top: 1.5vw;
   margin-left: 2vw;
   margin-right: 2vw;
-  --size: 0.4;
+  background-color: transparent;
 }
 
-textarea{
-  resize: none;
-  white-space: nowrap;
-  overflow-x: scroll;
+.terminal,span,.cmd,div {
+  --color: white;
+}
+
+.terminal, span {
+  --size: 0.4;
 }
