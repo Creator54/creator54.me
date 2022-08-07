@@ -78,6 +78,10 @@ a:active {
   --color: white;
 }
 
+.terminal-output {
+  --background: transparent;
+}
+
 .terminal, span {
   --size: 0.4;
 }
