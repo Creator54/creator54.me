@@ -828,6 +828,7 @@ terminal .terminal-output > div {
     .terminal.external [data-text],
     .cmd div {
         color: var(--color, #aaa);
+        font-size: 1vw;
         background-color: var(--background, #000);
     }
     .terminal [data-text], .cmd [data-text] {
