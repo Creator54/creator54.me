@@ -1,5 +1,8 @@
-body {
+html{
   background-color: #191B1C;
+}
+
+body {
   font-family: 'Poppins';
   margin: auto;
   height: 90%;
