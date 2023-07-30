@@ -1,11 +1,9 @@
 // Utility function cli()
 function cli() {
-  var x = document.getElementById("gui");
-  var y = document.getElementById("cli");
-  var z = document.getElementById("footer");
-  var btn = document.getElementById("btn");
-  let cn = document.getElementsByClassName("center")[0];
-  console.log(cn);
+  let x = document.getElementById("gui");
+  let y = document.getElementById("cli");
+  let btn = document.getElementById("btn");
+  let cn = document.getElementsByClassName("content")[0];
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
