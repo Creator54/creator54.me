@@ -15,6 +15,30 @@
     <script src="./assets/jquery.terminal/jquery.terminal.min.js"></script>
   </head>
   <body>
+ <script>
+      function cli() {
+        var x = document.getElementById("gui");
+        var y = document.getElementById("cli");
+        var z = document.getElementById("footer");
+        var btn = document.getElementById("btn");
+        let cn = document.getElementsByClassName("center")[0];
+        console.log(cn);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+          btn.innerHTML = "CLI";
+          let stl = { "borderStyle" : "none"}
+          Object.assign(cn.style, stl);;
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+          y.style.height = "26vw";
+          btn.innerHTML = "GUI";
+          let stl = { "borderStyle" : "solid"}
+          Object.assign(cn.style, stl);;
+        }
+      }
+    </script>
     <div id="navbar">
       <div id="navbar-left">
         <button id="btn" onclick="cli()"> CLI </button>
@@ -76,24 +100,7 @@
         }
       </script>
     </div>
-    <script>
-      function cli() {
-        var x = document.getElementById("gui");
-        var y = document.getElementById("cli");
-        var z = document.getElementById("footer");
-        var btn = document.getElementById("btn");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          y.style.display = "none";
-          btn.innerHTML = "CLI";
-        } else {
-          x.style.display = "none";
-          y.style.display = "block";
-          y.style.height = "28vw";
-          btn.innerHTML = "GUI";
-        }
-      }
-    </script>
+   
     </div>
     <footer>
       <a class="fa-solid fa-cloud-arrow-down" href="https://docs.creator54.me/resume" target="_blank"></a>

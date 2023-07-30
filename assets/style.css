@@ -68,7 +68,7 @@ a:active {
 
 .center{
   width: 50%;
-  border-style: solid;
+  border-style: none;
   border-color: grey;
 }
 #gui h1 {
