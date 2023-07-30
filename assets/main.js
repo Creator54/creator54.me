@@ -32,8 +32,12 @@ $(document).ready(function () {
         this.echo("Hello, " + args + ". Welcome to this terminal.");
       },
       whoami: function () {
+        const currentYear = new Date().getFullYear();
+        const birthYear = 1999;
+        const age = currentYear - birthYear;
+      
         this.echo(
-          "Hi there, Welcome to my website. I am Saroj Kumar Mahato, a 23-year-old, recent B.Tech graduate in Information Technology from UCET, Hazaribagh. I am a programmer, scripter, Linux/Cloud Enthusiast, Nix Fan, Chess lover and Open-Source Contributor whenever I find the need and have the knowledge to do so. I spend most of my time tweaking my local/cloud systems(currently NixOS everywhere), writing blogs/online posts though not very often. You can find some of my open-source Projects hosted via Github."
+          `Hi there, Welcome to my website. I am Saroj Kumar Mahato, a ${age}-year-old, recent B.Tech graduate in Information Technology from UCET, Hazaribagh. I am a programmer, scripter, Linux/Cloud Enthusiast, Nix Fan, Chess lover and Open-Source Contributor whenever I find the need and have the knowledge to do so. I spend most of my time tweaking my local/cloud systems(currently NixOS everywhere), writing blogs/online posts though not very often. You can find some of my open-source Projects hosted via Github.`
         );
       },
       help: function () {
